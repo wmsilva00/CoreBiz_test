@@ -1,0 +1,200 @@
+.productlist_layout_global {
+    padding: 25px 0 69px;
+}
+
+.productlist_layout_global .title_component_global {
+    padding: 0 20px 12px;
+}
+
+.productlist_layout_global .slick-track {
+    display: flex;
+    flex-flow: nowrap;
+}
+.productlist_layout_global .slick-slide {
+    text-align: center;
+}
+
+.productlist_layout_content .slick-dots {
+    padding: 0;
+    list-style: none;
+    display: flex!important;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+.productlist_layout_content .slick-dots button {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: #BDBDBD;
+    text-indent: -9999px;
+    cursor: pointer;
+    border: none;
+}
+.productlist_layout_content .slick-dots .slick-active button {
+    background: #F8475F;
+}
+
+.productlist_layout_content .slick-slider {
+    position: relative;
+}
+.productlist_layout_content .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 22px;
+    border: none;
+    background: transparent url('../../Svgs/arrow.svg') no-repeat center center;
+    padding: 0;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.productlist_layout_content .slick-prev {
+    left: -14px;
+    transform: rotate(180deg);
+}
+.productlist_layout_content .slick-next {
+    right: -14px;
+}
+
+
+
+.card_component_global {
+    width: 132px!important;
+    background-color: transparent;
+    margin: 0 20px;
+}
+
+.card_component_global figure {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.card_component_global figure .off {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 82px;
+    height: 73px;
+}
+.card_component_global figure img {
+    width: 100%;
+    height: auto;
+}
+
+.card_component_global .name {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 100%;
+    color: #7A7A7A;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+    height: 20px;
+}
+
+.card_component_global .rating {
+    width: 90px;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_component_global .rating img {
+    width: 12px;
+    height: 12px;
+}
+
+.card_component_global .before {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    color: #7A7A7A;
+    text-decoration: line-through;
+    margin: 0 0 4px;
+}
+.card_component_global .after {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000000;
+    margin: 0 0 6px;
+}
+.card_component_global .after[diff='true'] {
+    padding: 15px 0 0;
+}
+.card_component_global .conditions {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    color: #7A7A7A;
+    margin: 0 0 6px;
+}
+.card_component_global .link {
+    display: block;
+    border-radius: 5px;
+    background-color: #000000;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 0;
+}
+.card_component_global .link[diff='true'] {
+    margin: 23px 0 0;
+}
+
+@media (min-width: 767px) {
+    .productlist_layout_global .title_component_global {
+        padding: 0 40px 12px;
+    }
+
+    .card_component_global {
+        width: 216px!important;
+        background-color: transparent;
+        overflow: hidden;
+        transition: background-color 0.5s ease-in-out;
+        margin: 0 40px;
+    }
+    .card_component_global .name {
+        font-size: 12px;
+        margin: 10px 0 5px;
+    }
+    .card_component_global .before {
+        font-size: 12px;
+    }
+    .card_component_global .after {
+        font-size: 18px;
+    }
+    .card_component_global .conditions {
+        font-size: 11px;
+    }
+    .card_component_global .link {
+        font-size: 12px;
+        width: 125px;
+        margin: 0 auto 20px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .card_component_global .link[diff='true'] {
+        margin: 23px auto 20px;
+    }
+    .card_component_global:hover .link {
+        opacity: 1;
+    }
+    .card_component_global:hover {
+        background-color: #E6E8EA;
+    }
+
+}

@@ -1,0 +1,43 @@
+.title_component_global {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 100%;
+    color: #000000;
+    padding: 0 0 17px;
+    margin: 0 0 11px;
+}
+
+.title_component_global::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    background-color: #C0C0C0;
+    bottom: 0;
+}
+
+.title_component_global.white {
+    color: #FFFFFF;
+}
+
+.title_component_global.white::after {
+    background-color: #FFFFFF;
+}
+
+@media (min-width: 767px) {
+
+    .title_component_global {
+        font-size: 20px;
+        padding: 0 0 20px;
+        margin: 0 0 20px;
+    }
+
+    .title_component_global::after {
+        width: 65px;
+        height: 4.3px;
+    }
+
+}

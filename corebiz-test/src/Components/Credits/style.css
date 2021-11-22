@@ -1,0 +1,21 @@
+.credit_component_global p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    Font-size: 10px;
+    line-height: 100%;
+    color: #FFF;
+    margin: 0 0 5px;
+}
+
+.credit_component_global img {
+    width: fit-content;
+    height: 18px;
+}
+
+@media (min-width: 767px) {
+
+    .credit_component_global p {
+        font-size: 10.6px;
+    }
+    
+}

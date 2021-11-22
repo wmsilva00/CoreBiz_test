@@ -1,0 +1,32 @@
+.cta_component_global {
+    width: 100%;
+    max-width: 195px;
+    height: 38px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 0 auto 26px;
+    text-decoration: none;
+
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+.cta_component_global p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    width: 130px;
+    margin: 0;
+
+    color: #000000;
+}
+.cta_component_global img {
+    width: 16px;
+    height: fit-content;
+    margin: 0 0 0 10px;
+}

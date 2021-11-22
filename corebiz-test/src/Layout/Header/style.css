@@ -1,0 +1,150 @@
+.header_layout_global {
+    padding: 10px 0;
+}
+
+.header_layout_global .limit {
+    display: flex;
+    flex-flow: wrap;
+    align-items: baseline;
+    justify-content: space-between;;
+}
+
+
+.header_layout_global .menuMobile {
+    order: 1;
+    text-decoration: none;
+}
+.header_layout_global .menuMobile img{
+    width: 23px;
+    height: 16px;
+}
+.header_layout_global .menuMobile p{
+    width: 23px;
+    height: 16px;
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+.header_layout_global .logo {
+    width: 109px;
+    order: 2;
+}
+
+.header_layout_global .cart {
+    order: 3;
+    text-decoration: none;
+}
+
+.header_layout_global .cart img {
+    width: 18px;
+    height: 18px;
+}
+
+.header_layout_global .cart sup {
+    text-align: center;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: #F8475F;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.header_layout_global .menuMyAccount {
+    position: relative;
+    order: 4;
+    overflow: hidden;
+    max-height: 0px;
+    height: auto;
+    width: 100%;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding: 0;
+}
+.header_layout_global .menuMyAccount[data-open="true"] {
+    max-height: 60px;
+    padding: 20px 0;
+}
+
+.header_layout_global .menuMyAccount a {
+    font-family: 'Nunito', sans-serif;
+    font-family: 13px;
+    font-weight: 300;
+    padding: 0 0 0 25px;
+    text-decoration: none;
+    color: #7A7A7A;
+    background: url('../../Svgs/user.svg')left center no-repeat;
+    background-size: 18px;
+}
+
+.header_layout_global form {
+    width: 100%;
+    border-bottom: 1px solid #7A7A7A;
+
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    order: 5;
+}
+
+.header_layout_global form input {
+    border: none;
+    background-color: transparent;
+}
+
+.header_layout_global form input[type="text"] {
+    font-family: 'Nunito', sans-serif;
+    line-height: 100%;
+    font-size: 13px;
+    padding: 5px 5px;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+}
+
+.header_layout_global form input[type="submit"] {
+    width: 20px;
+    height: 20px;
+    background: transparent url('../../Svgs/search.svg') center center no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 767px) {
+
+    .header_layout_global .limit {
+        align-items: center;
+    }
+
+    .header_layout_global .menuMobile {
+        display: none;
+    }
+
+    .header_layout_global .logo {
+        width: 181px;
+        order: 1;
+    }
+
+    .header_layout_global form {
+        width: 718px;
+        order: 2;
+    }
+
+    .header_layout_global .menuMyAccount,
+    .header_layout_global .menuMyAccount[data-open="true"] {
+        order: 3;
+        width: auto;
+        max-height: inherit;
+        padding: 0;
+    }
+
+}

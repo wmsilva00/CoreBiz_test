@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:wght@400;600;700;900&display=swap');
+
+body {
+  margin: 0;
+}
+
+.limit {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  overflow: hidden;
+}

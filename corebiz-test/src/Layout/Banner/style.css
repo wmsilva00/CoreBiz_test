@@ -1,0 +1,54 @@
+.banner_layout_global {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.banner_layout_global .slick-track {
+    display: flex;
+    flex-flow: nowrap;
+}
+.banner_layout_global .slick-slide {
+    text-align: center;
+}
+
+.banner_layout_global .slick-dots {
+    position: absolute;
+    padding: 0;
+    list-style: none;
+    display: flex!important;
+    flex-flow: nowrap;
+    justify-content: center;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner_layout_global .slick-dots button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: #BDBDBD;
+    text-indent: -9999px;
+    cursor: pointer;
+    border: none;
+}
+.banner_layout_global .slick-dots .slick-active button {
+    background: #F8475F;
+}
+
+.banner_layout_global picture {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.banner_layout_global picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
